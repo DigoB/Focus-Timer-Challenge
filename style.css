@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --font-color-base: #323238;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-color-base);
+
+    background-color: darkolivegreen;
+
+}
+
+.page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 22rem auto;
+
+    max-width: 82.1rem;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 40rem;
+    
+}
+
+#timer {
+    font-weight: 500;
+
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+    display: flex;
+
+    width: clamp(15rem, 15rem + 20vw, 32rem);
+    
+}
+
+button {
+    cursor: pointer;
+
+    background-color: transparent;
+    border: none;
+}
+
+#controls {
+    display: flex;
+    gap: 4rem;
+
+    width: clamp(15rem, 15rem + 20vw, 32rem);
+
+    height: clamp(2rem, 2rem + 8vh, 4.8rem);
+}
+
+.climate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.4rem;
+}
+
+.climate button {
+    padding: clamp(2rem, 2rem + 7vh, 4.8rem);
+    background-color: gray;
+
+    border-radius: 2.4rem;
+}
