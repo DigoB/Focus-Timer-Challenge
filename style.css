@@ -7,7 +7,7 @@
 :root {
     font-size: 62.5%;
 
-    --font-color-base: #323238;
+    --font-color-base: black;
     --bg-color-button: #E1E1E6;
 
 }
@@ -19,7 +19,7 @@ body {
     font-size: 12.6rem;
 
 
-    background-color: darkolivegreen;
+    background-color: darkslategrey;
 
     display: grid;
     justify-content: center;
@@ -27,6 +27,26 @@ body {
 
     width: 100vw;
     height: 100vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 0 100px;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+
+}
+
+footer button {
+    background: transparent;
+    border: none;
+    
+    cursor: pointer;
+
 }
 
 .wrapper button {
@@ -71,4 +91,22 @@ body {
     cursor: pointer;
 }
 
+.climate .forestButton:focus {
+    background-color: forestgreen;
+}
 
+.climate .rainButton:focus {
+    background-color: navy;
+}
+
+.climate .cofeeButton:focus {
+    background-color: saddlebrown;
+}
+
+.climate .fireplaceButton:focus {
+    background-color: tomato;
+}
+
+.hide {
+    display: none;
+}
